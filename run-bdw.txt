@@ -1,0 +1,11 @@
+#!/bin/sh
+OMP_NUM_THREADS=44 KMP_AFFINITY=scatter ./copy_para_bdw.bin $1 $2
+OMP_NUM_THREADS=44 KMP_AFFINITY=scatter ./copy_para_bdw.bin $1 $2
+OMP_NUM_THREADS=44 KMP_AFFINITY=scatter ./copy_para_bdw.bin $1 $2
+OMP_NUM_THREADS=44 KMP_AFFINITY=scatter ./copy_para_bdw.bin $1 $2
+OMP_NUM_THREADS=44 KMP_AFFINITY=scatter ./copy_para_bdw.bin $1 $2
+OMP_NUM_THREADS=44 KMP_AFFINITY=scatter ./copy_para_bdw.bin $1 $2
+OMP_NUM_THREADS=44 KMP_AFFINITY=scatter ./copy_para_bdw.bin $1 $2
+OMP_NUM_THREADS=44 KMP_AFFINITY=scatter ./copy_para_bdw.bin $1 $2
+OMP_NUM_THREADS=44 KMP_AFFINITY=scatter ./copy_para_bdw.bin $1 $2
+OMP_NUM_THREADS=44 KMP_AFFINITY=scatter ./copy_para_bdw.bin $1 $2
