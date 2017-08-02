@@ -5,7 +5,7 @@
 #include <time.h>
 #include <malloc.h>
 #define TH_OMP_OVERHEAD_THRESHOLD_VEC 128
-#define TENSOR_SIZE 1008 
+#define TENSOR_SIZE 32000 
 //#define TENSOR_SIZE 25000000
 #define KNL_CORES 68
 #define REPEATED_TIMES 1000*200
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
     //gettimeofday(&toc, NULL);
     //interval = (toc.tv_sec-tic.tv_sec)*1000 + (float)(toc.tv_usec-tic.tv_usec)/1000;
    interval2 = (time_end.tv_sec-time_end.tv_sec)*1000000000 + time_end.tv_nsec-time_start.tv_nsec;
-   printf("memcopy      tensorSize: %10d thread: %6d time:  %10dns  \n", tensorSize, threads, interval2);
+   //printf("memcopy      tensorSize: %10d thread: %6d time:  %10dns  \n", tensorSize, threads, interval2);
    
    #pragma omp parallel for num_threads(threads1)
    for (i=0; i<tensorSize; i=i+1) {
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
    //gettimeofday(&tic, NULL);
    clock_gettime(CLOCK_REALTIME, &time_start);
    #pragma omp parallel for num_threads(threads2)  
-   #pragma ivdep 
+   #pragma simd //vector always 
    for (i=0; i<tensorSize; ++i) {
        dst[i] = src[i];
    }
