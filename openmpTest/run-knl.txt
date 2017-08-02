@@ -1,11 +1,12 @@
 #!/bin/sh
- KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_knl.bin $1 $2
- KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_knl.bin $1 $2
- KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_knl.bin $1 $2
- KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_knl.bin $1 $2
- KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_knl.bin $1 $2
- KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_knl.bin $1 $2
- KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_knl.bin $1 $2
- KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_knl.bin $1 $2
- KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_knl.bin $1 $2
- KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_knl.bin $1 $2
+make  AVX=512
+  KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_avx512f.bin $1 $2
+  KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_avx512f.bin $1 $2
+  KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_avx512f.bin $1 $2
+  KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_avx512f.bin $1 $2
+  KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_avx512f.bin $1 $2
+  KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_avx512f.bin $1 $2
+  KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_avx512f.bin $1 $2
+  KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_avx512f.bin $1 $2
+  KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_avx512f.bin $1 $2
+  KMP_HOT_TEAMS_MODE=1 OMP_NUM_THREADS=68 KMP_AFFINITY=scatter ./copy_para_avx512f.bin $1 $2
